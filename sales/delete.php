@@ -6,4 +6,5 @@ if ($id && $id > 0) {
     mysqli_stmt_bind_param($stmt, 'i', $id);
     mysqli_stmt_execute($stmt);
 }
-header('Location: ?m=sales'); exit;
+header('Location: ?m=sales');
+exit;
