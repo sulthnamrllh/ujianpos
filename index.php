@@ -1,9 +1,7 @@
 <?php
-// Router utama mengikuti pola file contoh: ?m=nama_modul&s=aksi
 $module = isset($_GET['m']) ? $_GET['m'] : 'home';
 $submodule = isset($_GET['s']) ? $_GET['s'] : 'tampil';
 
-// Proses simpan/update/hapus sebelum HTML dicetak agar header() dapat redirect.
 $actions = ['save' => 'save.php', 'update' => 'update.php', 'delete' => 'delete.php'];
 if (in_array($module, ['suppliers', 'sales'], true) && isset($actions[$submodule])) {
     include __DIR__ . '/' . $module . '/' . $actions[$submodule];
