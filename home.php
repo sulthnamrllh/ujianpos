@@ -1,12 +1,11 @@
 <?php
 include_once 'config/database.php';
 
-// Menghitung jumlah supplier
 $querySupplier = mysqli_query($koneksi, "SELECT COUNT(*) AS total FROM suppliers");
 $dataSupplier = mysqli_fetch_assoc($querySupplier);
 $totalSupplier = $dataSupplier['total'];
 
-// Menghitung jumlah sales
+
 $querySales = mysqli_query($koneksi, "SELECT COUNT(*) AS total FROM sales");
 $dataSales = mysqli_fetch_assoc($querySales);
 $totalSales = $dataSales['total'];
@@ -21,10 +20,10 @@ $totalSales = $dataSales['total'];
                 Dashboard jumlah data Suppliers dan Sales.
             </p>
         </div>
-
+        
         <div class="row g-4 justify-content-center">
 
-            <!-- Total Suppliers -->
+            
             <div class="col-md-5">
                 <div class="card h-100 border-primary" >
                     <div class="card-body text-center py-4">
@@ -39,7 +38,7 @@ $totalSales = $dataSales['total'];
                 </div>
             </div>
 
-            <!-- Total Sales -->
+
             <div class="col-md-5">
                 <div class="card h-100 border-success">
                     <div class="card-body text-center py-4">
