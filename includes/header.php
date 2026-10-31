@@ -14,9 +14,6 @@
             <img src="img/unnamed.png" alt="Logo POS" height="28" class="d-inline-block align-text-top">
             <strong>UJIANPOS</strong>
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
