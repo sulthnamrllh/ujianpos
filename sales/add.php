@@ -1,4 +1,5 @@
 <?php
+
 include_once 'config/database.php';
 $suppliers = mysqli_query($koneksi, 'SELECT id,name FROM suppliers ORDER BY name');
 if (!$suppliers || mysqli_num_rows($suppliers) === 0) {
