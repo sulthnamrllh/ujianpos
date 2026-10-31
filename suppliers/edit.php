@@ -23,20 +23,20 @@ if (!$r) {
 
             <div class="mb-2"><input type="text" class="form-control" name="name" maxlength="50"
                     value="<?= htmlspecialchars($r['name'] ?? '') ?>" placeholder="Nama Supplier">
-                </div>
+            </div>
 
             <div class="mb-2"><textarea class="form-control" name="address" maxlength="255" placeholder="Alamat"
                     rows="3"><?= htmlspecialchars($r['address'] ?? '') ?></textarea>
-                </div>
+            </div>
 
             <div class="mb-2"><input type="text" class="form-control" name="phone" maxlength="50"
                     value="<?= htmlspecialchars($r['phone'] ?? '') ?>" placeholder="Nomor Telepon">
-                </div>
+            </div>
 
             <div class="mb-2"><input type="email" class="form-control" name="email" maxlength="50"
                     value="<?= htmlspecialchars($r['email'] ?? '') ?>" placeholder="Email">
-                </div>
-                
+            </div>
+
             <div class="mb-2"><input type="hidden" name="id" value="<?= (int) $r['id'] ?>">
                 <input type="reset" class="btn btn-sm btn-danger"><input type="submit" class="btn btn-sm btn-primary"
                     name="update" value="Update">
