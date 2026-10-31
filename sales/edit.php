@@ -1,4 +1,5 @@
 <?php
+
 include_once 'config/database.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 if (!$id || $id < 1) {
